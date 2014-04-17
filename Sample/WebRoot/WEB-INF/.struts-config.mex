@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/WEB-INF/pages/searchProduct.jsp" location="950,450" dimension="238,51" />
+  <StrutsActivity path="/WEB-INF/pages/newProduct.jsp" location="50,650" dimension="223,51" />
+  <StrutsActivity path="/WEB-INF/pages/success.jsp" location="350,850" dimension="199,51" />
+  <StrutsActivity path="" location="350,50" dimension="32,51" />
+  <StrutsActivity path="newProduct.jsp" location="650,50" dimension="120,51" />
+  <StrutsActivity path="/mystruts/newProduct.jsp" location="950,50" dimension="179,51" />
+  <StrutsActivity path="/pages/newProduct.jsp" location="350,250" dimension="166,51" />
+  <StrutsActivity path="/pages/searchProduct.jsp" location="650,250" dimension="181,51" />
+  <StrutsActivity path="pages/newProduct.jsp" location="950,250" dimension="161,51" />
+  <StrutsActivity path="pages/searchProduct.jsp" location="50,450" dimension="176,51" />
+  <StrutsActivity path="/WEB-INF/pages/addProduct.jsp" location="50,250" dimension="223,51" />
+  <StrutsActivity path="/mystruts/save.jsp" location="950,650" dimension="137,51" />
+  <StrutsActivity path="/WEB-INF/pages/save.jsp" location="50,850" dimension="181,51" />
+  <StrutsActivity path="product.do" location="350,450" dimension="267,96" />
+  <StrutsActivity path="/WEB-INF/pages/error.jsp" location="650,850" dimension="185,51" />
+  <StrutsActivity path="/saveProduct.do" location="350,650" dimension="294,96" />
+  <StrutsTransition id="saveProduct.do,error,/WEB-INF/pages/error.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="644,686" />
+      <AbsolutePoint location="742,686" />
+      <AbsolutePoint location="742,850" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/saveProduct.do,error,/WEB-INF/pages/error.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="644,686" />
+      <AbsolutePoint location="742,686" />
+      <AbsolutePoint location="742,850" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="product.do,searchProduct,/WEB-INF/pages/searchProduct.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="617,475" />
+      <AbsolutePoint location="950,475" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="saveProduct.do,success,/WEB-INF/pages/success.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="449,746" />
+      <AbsolutePoint location="449,850" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/product.do,addProduct,/WEB-INF/pages/newProduct.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="350,516" />
+      <AbsolutePoint location="161,516" />
+      <AbsolutePoint location="161,650" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/product.do,searchProduct,/WEB-INF/pages/searchProduct.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="617,475" />
+      <AbsolutePoint location="950,475" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/saveProduct.do,success,/WEB-INF/pages/success.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="449,746" />
+      <AbsolutePoint location="449,850" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="product.do,addProduct,/WEB-INF/pages/newProduct.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="350,516" />
+      <AbsolutePoint location="161,516" />
+      <AbsolutePoint location="161,650" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/saveProduct.do,save,/WEB-INF/pages/success.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="449,746" />
+      <AbsolutePoint location="449,850" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/saveProduct.do,error,/WEB-INF/pages/success.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="419,746" />
+      <AbsolutePoint location="419,850" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

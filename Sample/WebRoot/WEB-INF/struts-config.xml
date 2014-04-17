@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans >
+  <form-bean name="saveProductForm" type="com.cognizant.flis.entity.ProductForm" />
+  <form-bean name="searchProductForm" type="com.cognizant.flis.entity.ProductForm" />
+  </form-beans>
+  <global-exceptions />
+  <global-forwards >
+<!--   <forward name="newProduct" path="pages/newProduct.jsp"></forward> -->
+<!--   <forward name="searchProduct" path="pages/searchProduct.jsp"></forward> -->
+  
+  </global-forwards>
+  <action-mappings >
+  <action path="product" type="com.cognizant.flis.action.ProductAction" parameter="method">
+  <forward name="addProduct" path="/WEB-INF/pages/newProduct.jsp"></forward>  
+  <forward name="searchProduct" path="/WEB-INF/pages/searchProduct.jsp"></forward>  
+  </action>
+  
+  <action path="/saveProduct" name="saveProductForm" type="com.cognizant.flis.action.SaveProductAction"><!-- 首先请求这个地址对一个action -->
+  <forward name="success" path="/WEB-INF/pages/success.jsp" />
+  <forward name="error" path="/WEB-INF/pages/error.jsp" />
+  </action>
+
+  </action-mappings>
+  <message-resources parameter="com.yourcompany.struts.ApplicationResources" />
+</struts-config>
+
